@@ -9,25 +9,25 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <main id="home">
-    <h1 class="lg-heading">
+    <h1 className="lg-heading">
       John
-      <span class="text-secondary">Doe</span>
+      <span className="text-secondary">Doe</span>
     </h1>
-    <h2 class="sm-heading">
+    <h2 className="sm-heading">
       Web Developer, Programmer, Designer & Entrepreneur
     </h2>
-    <div class="icons">
+    <div className="icons">
       <a href="#!">
-        <i class="fab fa-twitter fa-2x"></i>
+        <i className="fab fa-twitter fa-2x"></i>
       </a>
       <a href="#!">
-        <i class="fab fa-facebook fa-2x"></i>
+        <i className="fab fa-facebook fa-2x"></i>
       </a>
       <a href="#!">
-        <i class="fab fa-linkedin fa-2x"></i>
+        <i className="fab fa-linkedin fa-2x"></i>
       </a>
       <a href="#!">
-        <i class="fab fa-github fa-2x"></i>
+        <i className="fab fa-github fa-2x"></i>
       </a>
     </div>
     </main>

@@ -2,87 +2,89 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
-const menuNav = document.querySelector('.menu-nav');
-const menuBranding = document.querySelector('.menu-branding');
-const navItems = document.querySelectorAll('.nav-item');
-
  class Header extends React.Component {
-    constructor() {
+  constructor() {
     super();
+    this.toggleMenu = this.toggleMenu.bind(this);
     this.state = {
-      showMenu: false,
-      count: 0
+      isOpened: false,
+      menu: [],
+    };
+    this.fetchMenus();
+  }
+  
+  fetchMenus() {
+    setTimeout(() => {
+      this.setState((oldState) => {
+        console.log(this.state);
+        const newState = Object.assign({}, oldState);
+        newState.menu = [
+          {
+            title: 'Menu',
+            href: '/menu_react.html',
+          },
+          {
+            title: 'Comments',
+            href: '/lesson_15_hw.html',
+          },
+          {
+            title: 'React',
+            href: 'https://reactjs.org/',
+          },
+          {
+            title: 'GitHub',
+            href: 'https://github.com/romkravets',
+          },
+          {
+            title: 'Google',
+            href: 'https://google.com',
+          }
+        ];
+        return newState;
+      })
+    }, 0);
+  }
+
+  toggleMenu() {
+    this.setState((oldState) => {
+      const newState = Object.assign({}, oldState);
+      newState.isOpened = !oldState.isOpened;
+      return newState;
+    });
+  }
+
+  render() {
+    let classMain = "main ";
+
+    if (this.state.isOpened) {
+      classMain += 'main-active';
     }
+
+    let classSidebar = "menu__sidebar ";
+
+    if (this.state.isOpened) {
+      classSidebar += 'menu__open_btn';
+    }
+
+    const listItems = this.state.menu.map((item, i) => {
+      return <li key={i} className="menu__item">
+        <a href={item.href} className="menu__link">
+          <span>{item.title}</span>
+        </a>
+      </li>
+    });
+
+    return <div className="menu">
+      <div className={classSidebar}>
+      <a className="menu__link menu__close_btn" onClick={this.toggleMenu}>×</a>
+      <ul className="menu__nav">{listItems}</ul>
+    </div>
+    <div className={classMain}>
+    <button className="menu__btn menu__open_btn" onClick={this.toggleMenu}>☰ React menu</button>
+    </div>
+    </div>
   }
-    render() {
-      function toggleMenu() {
-        // if (!showMenu) {
-        //   menuBtn.classList.add('close');
-        //   menu.classNameList.add('show');
-        //   menuNav.classList.add('show');
-        //   menuBranding.classList.add('show');
-        //   navItems.forEach(item => item.classList.add('show'));
-      
-        //   // Set Menu State
-        //   this.setState(function(state, props) {
-        //     return {
-        //       showMenu: state.showMenu = true
-        //     }
-        //   }
-        //   menuBtn.classList.remove('close');
-        //   menu.classList.remove('show');
-        //   menuNav.classList.remove('show');
-        //   menuBranding.classList.remove('show');
-        //   navItems.forEach(item => item.classList.remove('show'));
-      
-        //   // Set Menu State
-        //   this.showMenu = false;
-        // }
-      }
-        return(
-        <header>
-          <div className="menu-btn"onClick={toggleMenu}>
-            <div className="btn-line"></div>
-            <div className="btn-line"></div>
-            <div className="btn-line"></div>
-          </div>
-          <p>Count: {this.state.count}</p>
-            <button onClick={() => this.setState({count: this.state.count + 1})}>+</button>
-            <button onClick={() => this.setState({count: this.state.count - 1})}>-</button>
-          <nav className="menu">
-            <div className="menu-branding">
-              <div className="portrait"></div>
-            </div>
-            <ul className="menu-nav">
-              <li className="nav-item current">
-                <a href="index.html" className="nav-link">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="about.html" className="nav-link">
-                  About Me
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="work.html" className="nav-link">
-                  My Work
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="contact.html" className="nav-link">
-                  How To Reach Me
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-    )
-  }
- }  
+ } 
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
