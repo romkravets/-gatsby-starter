@@ -19,25 +19,28 @@ const navItems = document.querySelectorAll('.nav-item');
   }
     render() {
       function toggleMenu() {
-        if (!showMenu) {
-          menuBtn.classList.add('close');
-          menu.classNameList.add('show');
-          menuNav.classList.add('show');
-          menuBranding.classList.add('show');
-          navItems.forEach(item => item.classList.add('show'));
+        // if (!showMenu) {
+        //   menuBtn.classList.add('close');
+        //   menu.classNameList.add('show');
+        //   menuNav.classList.add('show');
+        //   menuBranding.classList.add('show');
+        //   navItems.forEach(item => item.classList.add('show'));
       
-          // Set Menu State
-          this.showMenu = true;
-        } else {
-          menuBtn.classList.remove('close');
-          menu.classList.remove('show');
-          menuNav.classList.remove('show');
-          menuBranding.classList.remove('show');
-          navItems.forEach(item => item.classList.remove('show'));
+        //   // Set Menu State
+        //   this.setState(function(state, props) {
+        //     return {
+        //       showMenu: state.showMenu = true
+        //     }
+        //   }
+        //   menuBtn.classList.remove('close');
+        //   menu.classList.remove('show');
+        //   menuNav.classList.remove('show');
+        //   menuBranding.classList.remove('show');
+        //   navItems.forEach(item => item.classList.remove('show'));
       
-          // Set Menu State
-          this.showMenu = false;
-        }
+        //   // Set Menu State
+        //   this.showMenu = false;
+        // }
       }
         return(
         <header>
