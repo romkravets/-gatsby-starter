@@ -72,7 +72,7 @@ import { Link } from "gatsby"
       <ul className="menu__nav">{listItems}</ul>
     </div>
     <div className={classMain}>
-    <button className="menu__btn menu__open_btn" onClick={this.toggleMenu}>☰ React menu</button>
+    <button className="menu__btn menu__open_btn" onClick={this.toggleMenu}>☰</button>
     </div>
     </div>
   }
