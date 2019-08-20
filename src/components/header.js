@@ -1,7 +1,7 @@
 // import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-
+import { Link } from "gatsby"
  class Header extends React.Component {
   constructor() {
     super();
@@ -20,25 +20,17 @@ import React from "react"
         const newState = Object.assign({}, oldState);
         newState.menu = [
           {
-            title: 'Menu',
-            href: '/menu_react.html',
+            title: 'Home',
+            href: '/',
           },
           {
-            title: 'Comments',
-            href: '/lesson_15_hw.html',
+            title: 'About',
+            href: '//about',
           },
           {
-            title: 'React',
-            href: 'https://reactjs.org/',
+            title: 'Services',
+            href: '/services',
           },
-          {
-            title: 'GitHub',
-            href: 'https://github.com/romkravets',
-          },
-          {
-            title: 'Google',
-            href: 'https://google.com',
-          }
         ];
         return newState;
       })
@@ -68,9 +60,9 @@ import React from "react"
 
     const listItems = this.state.menu.map((item, i) => {
       return <li key={i} className="menu__item">
-        <a href={item.href} className="menu__link">
+        <Link className="menu__link" to={item.href}>
           <span>{item.title}</span>
-        </a>
+        </Link>
       </li>
     });
 
