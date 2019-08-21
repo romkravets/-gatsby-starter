@@ -623,9 +623,9 @@ pre tt:after {
   }
 }
 
-/* .menu-btn {
-  /* position: absolute; */
-  /* z-index: 3;
+ .menu-btn {
+   position: absolute; 
+  z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -650,7 +650,8 @@ pre tt:after {
   top: 0;
   width: 100%;
   opacity: 0.9;
-  visibility: hidden; }
+  visibility: hidden; 
+}
   .menu.show {
     visibility: visible; }
   .menu-branding, .menu-nav {
@@ -953,11 +954,17 @@ main {
 }
 
 .menu__close_btn {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
+  margin-left: 50px; */
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 
 .menu__open_btn {

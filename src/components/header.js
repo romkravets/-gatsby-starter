@@ -66,13 +66,20 @@ import { Link } from "gatsby"
       </li>
     });
 
-    return <div className="menu">
+    return <div className="">
       <div className={classSidebar}>
       <a className="menu__link menu__close_btn" onClick={this.toggleMenu}>×</a>
       <ul className="menu__nav">{listItems}</ul>
     </div>
     <div className={classMain}>
-    <button className="menu__btn menu__open_btn" onClick={this.toggleMenu}>☰</button>
+    {/* <button className="menu__btn menu__open_btn" onClick={this.toggleMenu}>
+
+    </button> */}
+    <div className="menu-btn" onClick={this.toggleMenu}>
+      <div className="btn-line"></div>
+      <div className="btn-line"></div>
+      <div className="btn-line"></div>
+    </div>
     </div>
     </div>
   }
