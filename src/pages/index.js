@@ -15,7 +15,7 @@ import { FaGithub } from 'react-icons/fa';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <main id="home">
+    <main  id="home">
     <h1 className="lg-heading">
       John
       <span className="text-secondary">Doe</span>

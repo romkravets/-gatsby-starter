@@ -29,6 +29,9 @@ function SEO({ description, lang, meta, title }) {
 
   return (
     <Helmet
+        bodyAttributes={{
+          id: 'bg-img'
+      }}
       htmlAttributes={{
         lang,
       }}
