@@ -88,7 +88,7 @@ import { Link } from "gatsby"
     )
 
   }
- } 
+ }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
