@@ -189,7 +189,7 @@ textarea {
 html {
   font: 112.5%/1.45em georgia, serif;
   box-sizing: border-box;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 * {
   box-sizing: inherit;
@@ -772,9 +772,11 @@ header {
 .text-secondary {
   color: #eece1a; }
 
+
+  /* min-height: calc(100vh - 60px); */
 main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px); }
+  /* padding: 4rem; */
+ }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
