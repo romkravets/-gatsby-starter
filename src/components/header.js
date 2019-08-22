@@ -46,42 +46,47 @@ import { Link } from "gatsby"
   }
 
   render() {
-    let classMain = "main ";
+    let classMain = "menu ";
+    let classBranding = 'menu-branding ';
+    let classMenuNav = 'menu-nav ';
+    let classBtn = 'menu-btn ';
+    let navItem = 'nav-item ';
 
     if (this.state.isOpened) {
-      classMain += 'main-active';
-    }
-
-    let classSidebar = "menu__sidebar ";
-
-    if (this.state.isOpened) {
-      classSidebar += 'menu__open_btn';
+      classMain += 'show';
+      classBranding += 'show';
+      classMenuNav += 'show';
+      classBtn += 'close';
+      navItem += 'show';
     }
 
     const listItems = this.state.menu.map((item, i) => {
-      return <li key={i} className="menu__item">
-        <Link className="menu__link" to={item.href}>
+      return <li key={i} className={navItem}>
+        <Link className="nav-link" to={item.href}>
           <span>{item.title}</span>
         </Link>
       </li>
     });
 
-    return <div className="">
-      <div className={classSidebar}>
-      <a className="menu__link menu__close_btn" onClick={this.toggleMenu}>×</a>
-      <ul className="menu__nav">{listItems}</ul>
-    </div>
-    <div className={classMain}>
-    {/* <button className="menu__btn menu__open_btn" onClick={this.toggleMenu}>
+    return ( 
+    <header>
+        <div  className={classBtn} onClick={this.toggleMenu}>
+          <div className="btn-line"></div>
+          <div className="btn-line"></div>
+          <div className="btn-line"></div>
+      </div>
+      <div className={classMain}>
+        <div  className={classBranding}>
+          <div class="portrait"></div>
+        </div>
+        <ul className={classMenuNav}>
+          {listItems}
+        </ul>
+      </div>
+    </header>
 
-    </button> */}
-    <div className="menu-btn" onClick={this.toggleMenu}>
-      <div className="btn-line"></div>
-      <div className="btn-line"></div>
-      <div className="btn-line"></div>
-    </div>
-    </div>
-    </div>
+    )
+
   }
  } 
 

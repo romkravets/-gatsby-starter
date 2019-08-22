@@ -650,7 +650,7 @@ pre tt:after {
   top: 0;
   width: 100%;
   opacity: 0.9;
-  visibility: hidden; 
+  visibility: visible; 
 }
   .menu.show {
     visibility: visible; }
@@ -917,7 +917,7 @@ main {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; } } */ 
+    grid-template-columns: 1fr; } } */
 
 
 
