@@ -3,11 +3,81 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import project1 from "../images/projects/project1.jpg";
+import project2 from "../images/projects/project2.jpg";
+import project3 from "../images/projects/project3.jpg";
+import project4 from "../images/projects/project4.jpg";
+import project5 from "../images/projects/project5.jpg";
+
 const ServicesPage = () => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Services</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <main id="work">
+    <h1 class="lg-heading">
+      My
+      <span class="text-secondary">Work</span>
+    </h1>
+    <h2 class="sm-heading">
+      Check out some of my projects...
+    </h2>
+    <div class="projects">
+      <div class="item">
+        <a href="#!">
+          <img src={project1} alt="Project"/>
+        </a>
+        <a href="#" class="btn-light">
+          <i class="fas fa-eye"></i> Project
+        </a>
+        <a href="#" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!">
+          <img src={project2} alt="Project"/>
+        </a>
+        <a href="#" class="btn-light">
+          <i class="fas fa-eye"></i> Project
+        </a>
+        <a href="#" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!">
+          <img src={project3} alt="Project"/>
+        </a>
+        <a href="#" class="btn-light">
+          <i class="fas fa-eye"></i> Project
+        </a>
+        <a href="#" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!">
+          <img src={project4} alt="Project"/>
+        </a>
+        <a href="#" class="btn-light">
+          <i class="fas fa-eye"></i> Project
+        </a>
+        <a href="#" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+      <div class="item">
+        <a href="#!">
+          <img src={project5} alt="Project"/>
+        </a>
+        <a href="#" class="btn-light">
+          <i class="fas fa-eye"></i> Project
+        </a>
+        <a href="#" class="btn-dark">
+          <i class="fab fa-github"></i> Github
+        </a>
+      </div>
+    </div>
+  </main>
   </Layout>
 )
 
