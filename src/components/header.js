@@ -31,6 +31,10 @@ import { Link } from "gatsby"
             title: 'Services',
             href: '/services',
           },
+          {
+            title: 'Contact',
+            href: '/contact',
+          },
         ];
         return newState;
       })
