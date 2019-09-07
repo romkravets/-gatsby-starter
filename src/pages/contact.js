@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Footer from "../components/footer"
 
 const ContactPage = () => (
   <Layout>
@@ -26,11 +27,7 @@ const ContactPage = () => (
             </div>
           </div>
    </main>
-   <footer id="main-footer">
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+   <Footer/>
   </Layout>
 )
 
