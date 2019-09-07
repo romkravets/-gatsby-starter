@@ -358,6 +358,7 @@ dl, dd, p, figure {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  font-family: 'Maison Neue', sans-serif;
 }
 
 pre {
@@ -682,7 +683,8 @@ pre {
   .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 3rem;
+    font-family: 'Alternate Gothic', sans-serif;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -723,11 +725,11 @@ body {
   line-height: 1.5;
 }
 
-/* body#bg-img {
+body#bg-img {
   background: url(../images/background.jpg);
   background-attachment: fixed;
   background-size: cover;
-} */
+}
 
 /* body#bg-img:after {
   content: '';
@@ -743,10 +745,15 @@ body {
 h1, h2, h3 {
   margin: 0;
   font-weight: 400;
+  font-family: 'Alternate Gothic', sans-serif;
 }
 
-h1.lg-heading, h2.lg-heading, h3.lg-heading {
-  font-size: 6rem;
+h1.lg-heading {
+  font-size: 10rem;
+}
+
+h2.lg-heading, h3.lg-heading {
+  font-size: 7rem;
 }
 
 h1.sm-heading, h2.sm-heading, h3.sm-heading {
