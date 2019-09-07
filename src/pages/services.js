@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Footer from "../components/footer"
 
 import project1 from "../images/projects/project1.jpg";
 import project2 from "../images/projects/project2.jpg";
@@ -78,11 +79,7 @@ const ServicesPage = () => (
       </div>
     </div>
   </main>
-  <footer id="main-footer">
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+  <Footer/>
   </Layout>
 )
 
