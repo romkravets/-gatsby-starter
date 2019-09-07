@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import portrait from "../images/portrait.jpg";
+import Footer from "../components/footer"
 
 const AboutPage = () => (
   <Layout>
@@ -46,6 +47,7 @@ const AboutPage = () => (
       </div>
     </div>
   </main>
+  <Footer/>
   </Layout>
 )
 

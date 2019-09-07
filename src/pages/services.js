@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Footer from "../components/footer"
 
 import project1 from "../images/projects/project1.jpg";
 import project2 from "../images/projects/project2.jpg";
@@ -78,6 +79,7 @@ const ServicesPage = () => (
       </div>
     </div>
   </main>
+  <Footer/>
   </Layout>
 )
 

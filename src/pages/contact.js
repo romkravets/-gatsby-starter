@@ -2,6 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Footer from "../components/footer"
 
 const ContactPage = () => (
   <Layout>
@@ -26,6 +27,7 @@ const ContactPage = () => (
             </div>
           </div>
    </main>
+   <Footer/>
   </Layout>
 )
 
