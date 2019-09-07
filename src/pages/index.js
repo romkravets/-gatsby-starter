@@ -17,8 +17,8 @@ const IndexPage = () => (
     <SEO title="Home" />
     <main id="home">
     <h1 className="lg-heading">
-      John
-      <span className="text-secondary">Doe</span>
+      Rom
+      <span className="text-secondary">Kravets</span>
     </h1>
     <h2 className="sm-heading">
       Web Developer, Programmer, Designer & Entrepreneur
