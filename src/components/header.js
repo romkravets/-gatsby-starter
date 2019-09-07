@@ -25,11 +25,11 @@ import { Link } from "gatsby"
           },
           {
             title: 'About',
-            href: '//about',
+            href: '/about',
           },
           {
-            title: 'Services',
-            href: '/services',
+            title: 'Work',
+            href: '/work',
           },
           {
             title: 'Contact',

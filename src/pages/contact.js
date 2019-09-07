@@ -17,13 +17,13 @@ const ContactPage = () => (
          </h2>
          <div class="boxes">
             <div>
-            <span class="text-secondary">Email: </span> johndoe@test.com
+            <span class="text-secondary">Email: </span> romann.kravets@gmail.com
             </div>
             <div>
-            <span class="text-secondary">Phone: </span> (555) 555-5555
+            <span class="text-secondary">Phone: </span> (096) 927-17-07
             </div>
             <div>
-            <span class="text-secondary">Address: </span> 50 Main st Boston MA 02101
+            <span class="text-secondary">Address: </span> Ternopil
             </div>
           </div>
    </main>

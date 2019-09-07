@@ -10,7 +10,7 @@ import project3 from "../images/projects/project3.jpg";
 import project4 from "../images/projects/project4.jpg";
 import project5 from "../images/projects/project5.jpg";
 
-const ServicesPage = () => (
+const WorkPage = () => (
   <Layout>
     <SEO title="Page two" />
     <main id="work">
@@ -83,4 +83,4 @@ const ServicesPage = () => (
   </Layout>
 )
 
-export default ServicesPage;
+export default WorkPage;
