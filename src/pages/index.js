@@ -10,9 +10,6 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 import { FaTelegramPlane } from 'react-icons/fa';
 
-
-
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -26,19 +23,19 @@ const IndexPage = () => (
       Web Developer, Programmer, Designer & Entrepreneur
     </h2>
     <div className="icons">
-      <a href="#!">
+      <a href="https://www.facebook.com/romann.kravets">
         <i className="fab fa-twitter fa-2x"> <FaFacebookF /></i>
       </a>
-      <a href="#!">
+      <a href="mailto:romann.kravets@gmail.com">
         <i className="fab fa-facebook fa-2x"><IoIosMail /></i>
       </a>
-      <a href="#!">
+      <a href="https://github.com/romkravets">
         <i className="fab fa-linkedin fa-2x"><FaGithub /></i>
       </a>
-      <a href="#!">
+      <a href="https://www.linkedin.com/in/romkravets">
         <i className="fab fa-github fa-2x"><FaLinkedinIn  /></i>
       </a>
-      <a href="#!">
+      <a href=" https://t.me/romkravets">
         <i className="fab fa-github fa-2x"><FaTelegramPlane  /></i>
       </a>
       </div>
