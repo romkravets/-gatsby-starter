@@ -97,7 +97,7 @@ body#bg-img {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background: #373737;
+  background: rgb(33, 88, 127);
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
@@ -107,7 +107,7 @@ body#bg-img {
 }
 
 .menu-branding {
-  background: #444;
+  background: rgb(68, 68, 68);
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
   &.show {
@@ -186,7 +186,9 @@ h2.lg-heading, h3.lg-heading {
 h1.sm-heading, h2.sm-heading, h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
-  background: rgba(73, 73, 73, 0.5);
+  background: rgb(72, 104, 127);
+  //background: rgba(73, 73, 73, 0.5);
+  
 }
 
 a {
@@ -206,7 +208,7 @@ header {
 
 main {
   padding: 4rem;
-  background: rgba(68, 68, 68, 0.9);
+  background: rgba(33, 88, 127, 0.9);
   min-height: calc(100vh - 0px);
   .icons {
     margin-top: 1rem;
