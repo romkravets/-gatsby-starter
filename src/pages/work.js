@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../layouts"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 
@@ -11,7 +11,7 @@ import project4 from "../images/projects/project4.jpg";
 import project5 from "../images/projects/project5.jpg";
 
 const WorkPage = () => (
-  <Layout>
+  <div>
     <SEO title="Page two" />
     <main id="work">
     <h1 class="lg-heading">
@@ -80,7 +80,7 @@ const WorkPage = () => (
     </div>
   </main>
   <Footer/>
-  </Layout>
+  </div>
 )
 
 export default WorkPage;
