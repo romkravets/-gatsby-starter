@@ -117,6 +117,7 @@ body#bg-img {
     width: 250px;
     height: 250px;
     background: url("../images/portrait.jpg");
+    background-size: cover;
     border-radius: 50%;
     border: solid 3px #eece1a;
   }
@@ -176,7 +177,7 @@ h1, h2, h3 {
 }
 
 h1.lg-heading {
-  font-size: 10rem;
+  font-size: 12rem;
 }
 
 h2.lg-heading, h3.lg-heading {
@@ -185,10 +186,9 @@ h2.lg-heading, h3.lg-heading {
 
 h1.sm-heading, h2.sm-heading, h3.sm-heading {
   margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
+  // padding: 0.2rem 1rem;
   background: rgb(72, 104, 127);
   //background: rgba(73, 73, 73, 0.5);
-  
 }
 
 a {
@@ -226,9 +226,20 @@ main {
     /* background: url(../images/background.jpg);
     background-attachment: fixed;
     background-size: cover; */
-    h1 {
-      margin-top: 20vh;
-    }
+    // h1 {
+    //   //margin-top: 20vh;
+    // }
+  }
+}
+
+.home {
+  &__description {
+    padding-left: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-right: -50%;
+    transform: translate(-0%, -50%)
   }
 }
 
@@ -252,6 +263,8 @@ main {
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid;
+    width: 286px;
+    height: 286px;
   }
   .bio {
     grid-area: bio;
