@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import portrait from "../images/portrait.jpg";
+import portrait from "../images/portrait.png";
 import Footer from "../components/footer"
 
 const AboutPage = () => (

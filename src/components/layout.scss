@@ -116,7 +116,7 @@ body#bg-img {
   .portrait {
     width: 250px;
     height: 250px;
-    background: url("../images/portrait.jpg");
+    background: url("../images/portrait.png");
     border-radius: 50%;
     border: solid 3px #eece1a;
   }
@@ -176,7 +176,7 @@ h1, h2, h3 {
 }
 
 h1.lg-heading {
-  font-size: 10rem;
+  font-size: 12rem;
 }
 
 h2.lg-heading, h3.lg-heading {
@@ -226,9 +226,21 @@ main {
     /* background: url(../images/background.jpg);
     background-attachment: fixed;
     background-size: cover; */
-    h1 {
-      margin-top: 20vh;
-    }
+    // h1 {
+    //   //margin-top: 20vh;
+    // }
+    
+  }
+}
+
+.home {
+  &__description {
+    padding-left: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-right: -50%;
+    transform: translate(-0%, -50%)
   }
 }
 
@@ -252,6 +264,8 @@ main {
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid;
+    width: 286px;
+    height: 286px;
   }
   .bio {
     grid-area: bio;
@@ -379,7 +393,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0);
     .portrait {
-      background: url("../images/portrait_small.jpg");
+      background: url("../images/portrait_small.png");
       width: 150px;
       height: 150px;
     }

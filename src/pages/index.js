@@ -8,6 +8,7 @@ import { IoIosMail } from "react-icons/io";
 import { FaFacebookF } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
+import { FaTelegramPlane } from 'react-icons/fa';
 
 
 
@@ -15,11 +16,12 @@ import { FaGithub } from 'react-icons/fa';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <main id="home">
-    <h1 className="lg-heading">
-      Rom
-      <span className="text-secondary">Kravets</span>
-    </h1>
+    <main id="home" className="home">
+      <div className="home__description">
+        <h1 className="lg-heading">
+          Rom
+            <span className="text-secondary">Kravets</span>
+        </h1>
     <h2 className="sm-heading">
       Web Developer, Programmer, Designer & Entrepreneur
     </h2>
@@ -34,8 +36,12 @@ const IndexPage = () => (
         <i className="fab fa-linkedin fa-2x"><FaGithub /></i>
       </a>
       <a href="#!">
-        <i className="fab fa-github fa-2x">< FaLinkedinIn  /></i>
+        <i className="fab fa-github fa-2x"><FaLinkedinIn  /></i>
       </a>
+      <a href="#!">
+        <i className="fab fa-github fa-2x"><FaTelegramPlane  /></i>
+      </a>
+      </div>
     </div>
     </main>
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
