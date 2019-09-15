@@ -7,7 +7,7 @@ import Footer from "../components/footer"
 const AboutPage = () => (
   <Scrollbars style={{ width: "100%", height: "100vh" }}>
     <div>
-      <SEO title="Page two" />
+      <SEO title="About" />
       <main id="about" className="main-block">
         <h1 className="lg-heading">
           About
