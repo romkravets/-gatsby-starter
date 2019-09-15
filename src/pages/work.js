@@ -7,7 +7,7 @@ import Footer from "../components/footer"
 const WorkPage = () => (
   <Layout>
     <SEO title="Page two" />
-    <main id="work">
+    <main id="work" className="">
       <FullpageWrapper/>
     </main>
   <Footer/>

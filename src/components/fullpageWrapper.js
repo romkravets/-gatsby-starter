@@ -1,7 +1,7 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 
-import "../scss/fullpage.scss";
+//import "../scss/fullpage.scss";
 
 
 
