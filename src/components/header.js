@@ -63,7 +63,6 @@ import { Link } from "gatsby"
     let classMenuNav = 'menu-nav ';
     let classBtn = 'menu-btn ';
     let navItem = 'nav-item ';
-    //let navLink = 'nav-link';
 
     if (this.state.isOpened) {
       classMain += 'show';
@@ -71,7 +70,6 @@ import { Link } from "gatsby"
       classMenuNav += 'show';
       classBtn += 'close';
       navItem += 'show';
-      //navLink += 'show';
     }
 
     const listItems = this.state.menu.map((item, i) => {
@@ -84,6 +82,11 @@ import { Link } from "gatsby"
 
     return (
     <header>
+        {/* <div className="logo">
+          <Link className="logo__link" to='/'>
+            <span>romkravets</span>
+          </Link>
+        </div> */}
         <div  className={classBtn} onClick={this.toggleMenu}>
           <div className="btn-line"></div>
           <div className="btn-line"></div>

@@ -1,6 +1,5 @@
 import React from "react"
 
-import Layout from "../layouts/index"
 import SEO from "../components/seo"
 import portrait from "../images/portrait.jpg";
 import Footer from "../components/footer"

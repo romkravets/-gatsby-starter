@@ -1,6 +1,5 @@
 import React from "react"
 
-import Layout from "../layouts/index"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 
