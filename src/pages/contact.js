@@ -1,9 +1,10 @@
 import React from "react"
-
+import { Scrollbars } from 'react-custom-scrollbars';
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 
 const ContactPage = () => (
+  <Scrollbars style={{ width: '100%', height: '100vh' }}>
   <div>
       <SEO title="Contact" />
       <main id="contact" className="main-block">
@@ -39,6 +40,7 @@ const ContactPage = () => (
    </main>
    <Footer/>
   </div>
+  </Scrollbars>
 )
 
 export default ContactPage;
