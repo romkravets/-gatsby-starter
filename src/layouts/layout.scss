@@ -31,8 +31,20 @@ body {
   font-family: $maison-neue;
   line-height: 1.5;
   margin: auto;
+  overflow-y: scroll;
  //max-width: 1400px;
 }
+
+// .logo {
+//   position: absolute;
+//   z-index: 3;
+//   left: 35px;
+//   top: 35px;
+//   cursor: pointer;
+//   font-family: $alternate-gothic;
+//   font-size: 2em;
+//   text-transform: uppercase;
+// }
 
 .menu-btn {
   position: absolute;
@@ -201,6 +213,7 @@ header {
   padding: 4rem;
   background:  $body-bgc;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .home {
