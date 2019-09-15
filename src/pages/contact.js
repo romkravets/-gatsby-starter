@@ -7,7 +7,7 @@ import Footer from "../components/footer"
 const ContactPage = () => (
   <Layout>
       <SEO title="Contact" />
-      <main id="contact">
+      <main id="contact" className="main-block">
          <h1 class="lg-heading">
             Contact
             <span class="text-secondary">Me</span>

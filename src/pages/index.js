@@ -22,20 +22,20 @@ const IndexPage = () => (
     <h2 className="sm-heading">
       Web Developer, Programmer, Designer & Entrepreneur
     </h2>
-    <div className="icons">
-      <a href="https://www.facebook.com/romann.kravets">
+    <div className="home__icons">
+      <a className="home__link" href="https://www.facebook.com/romann.kravets">
         <i className="fab fa-twitter fa-2x"> <FaFacebookF /></i>
       </a>
-      <a href="mailto:romann.kravets@gmail.com">
+      <a className="home__link" href="mailto:romann.kravets@gmail.com">
         <i className="fab fa-facebook fa-2x"><IoIosMail /></i>
       </a>
-      <a href="https://github.com/romkravets">
+      <a className="home__link" href="https://github.com/romkravets">
         <i className="fab fa-linkedin fa-2x"><FaGithub /></i>
       </a>
-      <a href="https://www.linkedin.com/in/romkravets">
+      <a className="home__link" href="https://www.linkedin.com/in/romkravets">
         <i className="fab fa-github fa-2x"><FaLinkedinIn  /></i>
       </a>
-      <a href=" https://t.me/romkravets">
+      <a className="home__link" href=" https://t.me/romkravets">
         <i className="fab fa-github fa-2x"><FaTelegramPlane  /></i>
       </a>
       </div>

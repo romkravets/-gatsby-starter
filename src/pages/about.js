@@ -8,7 +8,7 @@ import Footer from "../components/footer"
 const AboutPage = () => (
   <Layout>
       <SEO title="Page two" />
-      <main id="about">
+      <main id="about" className="main-block">
     <h1 class="lg-heading">
       About
       <span class="text-secondary">Me</span>
