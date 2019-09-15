@@ -1,11 +1,11 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../layouts/index"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 
 const ContactPage = () => (
-  <Layout>
+  <div>
       <SEO title="Contact" />
       <main id="contact" className="main-block">
          <h1 className="lg-heading">
@@ -39,7 +39,7 @@ const ContactPage = () => (
       </div>
    </main>
    <Footer/>
-  </Layout>
+  </div>
 )
 
 export default ContactPage;

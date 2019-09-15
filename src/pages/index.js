@@ -1,7 +1,7 @@
 import React from "react"
 // import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../layouts/index"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import { IoIosMail } from "react-icons/io";
@@ -11,7 +11,7 @@ import { FaGithub } from 'react-icons/fa';
 import { FaTelegramPlane } from 'react-icons/fa';
 
 const IndexPage = () => (
-  <Layout>
+  <div>
     <SEO title="Home" />
     <main id="home" className="home">
       <div className="home__description">
@@ -44,7 +44,7 @@ const IndexPage = () => (
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div> */}
-  </Layout>
+  </div>
 )
 
 export default IndexPage

@@ -1,12 +1,12 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../layouts/index"
 import SEO from "../components/seo"
 import portrait from "../images/portrait.jpg";
 import Footer from "../components/footer"
 
 const AboutPage = () => (
-  <Layout>
+  <div>
       <SEO title="Page two" />
       <main id="about" className="main-block">
     <h1 className="lg-heading">
@@ -48,7 +48,7 @@ const AboutPage = () => (
     </div>
   </main>
   <Footer/>
-  </Layout>
+  </div>
 )
 
 export default AboutPage;
