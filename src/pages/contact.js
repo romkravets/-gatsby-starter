@@ -8,11 +8,11 @@ const ContactPage = () => (
   <Layout>
       <SEO title="Contact" />
       <main id="contact" className="main-block">
-         <h1 class="lg-heading">
+         <h1 className="lg-heading">
             Contact
-            <span class="text-secondary">Me</span>
+            <span className="text-secondary">Me</span>
          </h1>
-         <h2 class="sm-heading">
+         <h2 className="sm-heading">
             This is how you can reach me...
          </h2>
          <div>

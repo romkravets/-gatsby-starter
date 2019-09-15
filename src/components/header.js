@@ -16,7 +16,6 @@ import { Link } from "gatsby"
   fetchMenus() {
     setTimeout(() => {
       this.setState((oldState) => {
-        console.log(this.state);
         const newState = Object.assign({}, oldState);
         newState.menu = [
           {
@@ -72,7 +71,7 @@ import { Link } from "gatsby"
       </li>
     });
 
-    return ( 
+    return (
     <header>
         <div  className={classBtn} onClick={this.toggleMenu}>
           <div className="btn-line"></div>
@@ -81,7 +80,7 @@ import { Link } from "gatsby"
       </div>
       <div className={classMain}>
         <div  className={classBranding}>
-          <div class="portrait"></div>
+          {/* <div className="portrait"></div> */}
         </div>
         <ul className={classMenuNav}>
           {listItems}
