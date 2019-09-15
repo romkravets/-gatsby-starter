@@ -31,7 +31,6 @@ body {
   font-family: $maison-neue;
   line-height: 1.5;
   margin: auto;
-  overflow-y: scroll;
  //max-width: 1400px;
 }
 
@@ -95,6 +94,7 @@ body {
   float: left;
   width: 50%;
   height: 100vh;
+  //height: auto;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -213,7 +213,6 @@ header {
   padding: 4rem;
   background:  $body-bgc;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .home {
@@ -263,8 +262,8 @@ header {
     margin: auto;
     border-radius: 50%;
     border: #eece1a 3px solid;
-    width: 286px;
-    height: 286px;
+    width: 200px;
+    height: 200px;
   }
   .bio {
     grid-area: bio;
@@ -354,6 +353,19 @@ header {
   height: 60px;
 }
 
+.work {
+  // background-color: rgb(255, 255, 255);
+  // color: rgb(43, 43, 43);
+  &__section-title {
+    text-align: center;
+    display: flex;
+  }
+}
+
+.title-section .fp-tableCell {
+  vertical-align: inherit;
+}
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr);
@@ -375,6 +387,11 @@ header {
       margin-bottom: 1rem;
     }
   }
+  .main-block {
+  padding: 1rem;
+  background:  $body-bgc;
+  min-height: 100vh;
+}
   .home {
     &__description {
     padding-left: 2.5rem;
@@ -386,12 +403,14 @@ header {
     float: none;
     width: 100%;
     min-height: 0;
+    //height: auto;
   }
   ul.menu-nav.show, div.menu-branding.show {
     transform: translate3d(0, 0, 0);
   }
   .menu-nav {
     height: 75vh;
+    //height: auto;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
@@ -429,7 +448,7 @@ header {
   }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .home {
     &__description {
     padding-left: 0;
