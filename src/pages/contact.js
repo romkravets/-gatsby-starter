@@ -18,7 +18,7 @@ const ContactPage = () => (
             <label className="field a-field a-field_a1">
               <input
                 className="field__input a-field__input"
-                placeholder="e.g. Stanislav"
+                // placeholder="e.g. Stanislav"
                 required
               />
               <span className="a-field__label-wrap">
@@ -28,7 +28,7 @@ const ContactPage = () => (
             <label className="field a-field a-field_a2">
               <input
                 className="field__input a-field__input"
-                placeholder="e.g. Melnikov"
+                // placeholder="e.g. Melnikov"
                 required
               />
               <span className="a-field__label-wrap">
@@ -38,7 +38,7 @@ const ContactPage = () => (
             <label className="field a-field a-field_a3">
               <input
                 className="field__input a-field__input"
-                placeholder="e.g. melnik909@ya.ru"
+                // placeholder="e.g. melnik909@ya.ru"
                 required
               />
               <span className="a-field__label-wrap">
