@@ -13,40 +13,28 @@ const ContactPage = () => (
           <span className="text-secondary">Me</span>
         </h1>
         <h2 className="sm-heading">This is how you can reach me...</h2>
-        <div>
-          <div className="page">
-            <label className="field a-field a-field_a1">
-              <input
-                className="field__input a-field__input"
-                // placeholder="e.g. Stanislav"
-                required
-              />
-              <span className="a-field__label-wrap">
-                <span className="a-field__label">First name</span>
-              </span>
-            </label>
-            <label className="field a-field a-field_a2">
-              <input
-                className="field__input a-field__input"
-                // placeholder="e.g. Melnikov"
-                required
-              />
-              <span className="a-field__label-wrap">
-                <span className="a-field__label">Last name</span>
-              </span>
-            </label>
-            <label className="field a-field a-field_a3">
-              <input
-                className="field__input a-field__input"
-                // placeholder="e.g. melnik909@ya.ru"
-                required
-              />
-              <span className="a-field__label-wrap">
-                <span className="a-field__label">E-mail</span>
-              </span>
-            </label>
+        <div className="container">
+        <form>
+          <div className="group">
+            <input type="text" required />
+            <span className="highlight" />
+            <span className="bar" />
+            <label>Name</label>
           </div>
-        </div>
+          <div className="group">
+            <input type="text" required />
+            <span className="highlight" />
+            <span className="bar" />
+            <label>Email</label>
+          </div>
+          <div className="group">
+            <textarea type="text" required  rows="4" cols="50"/>
+            <span className="highlight" />
+            <span className="bar" />
+            <label>Massage</label>
+          </div>
+        </form>
+      </div>
       </main>
       <Footer />
     </div>
