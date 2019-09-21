@@ -1,5 +1,5 @@
 import React from "react"
-import { Scrollbars } from "react-custom-scrollbars"
+import  Scrollbars from "react-custom-scrollbars"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 
